@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Header from './Header.js';
+import Footer from './Footer';
+// import MainContent from './MainContent';
+import Square from './Square';
+import Board from './Board';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+return (
+    <div className="">
+      <Square textContent="Hello" dataIndex="1"/>
+      <Square textContent="World" dataIndex="2"/>
+      <hr></hr>
+      <Header/>
+      <Board/>
+
+      <Footer textContent="All rights reserved 2022."/>
     </div>
   );
 }
